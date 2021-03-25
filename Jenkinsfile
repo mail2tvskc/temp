@@ -9,7 +9,11 @@ pipeline {
     stages {
         stage('Main') {
             steps {
-                sh 'hostname'
+                sh '''
+                    hostname
+                    echo "Hi, How are you ?"
+                    pwd
+                '''
             }
         }
     }
